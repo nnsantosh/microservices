@@ -48,7 +48,8 @@ For large teams monlithic repository is easier to manage.
 The most commonly used technique to decompose a system into micro services is based on business capability. <br/>
 In some cases it may be required to decompose system based on technical capabilities or functional capabilities. <br/>
 
-
+Refer diagram below:
+![serviceDecomposition](https://github.com/nnsantosh/microservices/blob/master/serviceDecompositionDiagram.jpg)
 
 
 
