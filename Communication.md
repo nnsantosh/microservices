@@ -3,9 +3,13 @@ Is the ways in which the microservices in our system can communicate with each o
 1. Remote Procedure Invocation- Service sends request to another service and waits for response. <br/>
 Can be done using technologies such as REST and Apache Thrift. <br/>
 Commonly synchronous message communication is used but other techniques are also available though they are complex and less commonly used. <br/>
+Refer diagram below:
+![synchronousCommunication](https://github.com/nnsantosh/microservices/blob/master/rpiDiagram.jpg)
 2. Asynchronous message based communication is used if response is not immediately required. <br/>
 Commonly implemented using message bus. So communication is dependent on message broker like RabbitMQ. <br/>
 Publish subscribe pattern is used. It leads to more overhead. <br/>
+Refer diagram below:
+![asynchronousCommunication](https://github.com/nnsantosh/microservices/blob/master/asyncCommunicationDiagram.jpg)
 3. In some cases Custom or domain specific protocols are used which can be potentially the only option when communicating with third party systems or legacy systems which would require protocols such as FTP or SMTP. <br/>
 
 ## Microservice registry
