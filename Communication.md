@@ -25,10 +25,14 @@ A separate registry service can be introduced to handle all this so that individ
 ## Microservice discovery
 1. Client Side Discovery where the service that needs to call another service obtains the network location of that service instance by directly querying the service registry database. <br/>
 The service registry will also have some load balancing logic to determine which instance to select and return to the calling service. <br/>
+Refer diagram below:
+![ClientSideDiscovery](https://github.com/nnsantosh/microservices/blob/master/Client_Side_Service_Discovery_Diagram.jpg)
 2. Server Side Discovery where the service that needs to call another service will have no knowledge of the service registry but it simply sends it request to a load balancer. <br/>
 The load balancer it would then query the service registry for an instance of the required service and forward the request there. <br/>
 One advantage of this is it is easier for clients since they need not be aware of service registry. <br/>
 Disadvantage is there is more network hops involved. <br/>
+Refer diagram below:
+![ServerSideDiscovery](https://github.com/nnsantosh/microservices/blob/master/Server_side_discovery_diagram.jpg)
 
 Consul - https://www.consul.io/
 A service mesh solution that provides a strongly consistent data store that can be used not only for service discovery purposes but also for health checking 
